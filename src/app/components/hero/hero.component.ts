@@ -6,29 +6,30 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <section class="min-h-screen flex items-center justify-center bg-hero-gradient relative overflow-hidden">
+    <section class="min-h-screen flex items-center justify-center bg-hero-gradient relative overflow-hidden" role="banner" aria-labelledby="hero-title">
       <!-- Background decoration -->
-      <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+      <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%23ffffff%22%20fill-opacity%3D%220.05%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20" aria-hidden="true"></div>
       
       <div class="container mx-auto px-6 relative z-10">
         <div class="text-center text-white fade-in-up">
           <div class="mb-6">
-            <svg class="w-16 h-16 mx-auto mb-4 text-white/90 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
+            <svg class="w-16 h-16 mx-auto mb-4 text-white/90 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true" role="img" aria-label="Icône de développement">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
             </svg>
           </div>
           
-          <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight animate-fadeInUp">
-            Abdellah
+          <h1 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6 tracking-tight animate-fadeInUp">
+            Abdellah ABDEDOU
             <span class="block text-3xl md:text-4xl font-normal text-white/90 mt-2 animate-fadeInUp" style="animation-delay: 0.2s;">
-              Développeur Back-End
+              Développeur Full Stack
             </span>
           </h1>
           
           <p class="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp" style="animation-delay: 0.4s;">
-            Spécialisé en <strong>Java Spring Boot</strong> et <strong>Nest.js</strong>
+            Spécialisé en <strong>Java Spring Boot</strong> et <strong>Node.js</strong>
             <br />
-            Expert en optimisation des performances et création d'API sécurisées
+            Solide expérience en conception d’API sécurisées, optimisation des performances et intégration front-end pour des applications web robustes et évolutives
+
           </p>
           
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fadeInUp" style="animation-delay: 0.6s;">

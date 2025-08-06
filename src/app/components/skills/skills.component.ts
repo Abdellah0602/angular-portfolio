@@ -86,14 +86,14 @@ import { CommonModule } from '@angular/common';
         <!-- Section Méthodologies -->
         <div class="mt-20 fade-in-up" style="animation-delay: 0.6s;">
           <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-primary mb-4">Méthodologies & Best Practices</h3>
+            <h3 class="text-3xl font-bold text-primary mb-4">Méthodologies et Bonnes Pratiques</h3>
             <p class="text-lg text-muted-foreground">Approches que j'applique pour garantir la qualité</p>
           </div>
           
           <div class="grid md:grid-cols-3 gap-8">
             <div 
               *ngFor="let method of methodologies; let i = index"
-              class="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/20"
+              class="card card-hover group fade-in-up"
               [style.animation-delay]="(i * 0.1) + 's'"
             >
               <!-- Background decoration -->
@@ -131,40 +131,6 @@ import { CommonModule } from '@angular/common';
                 <!-- Hover effect -->
                 <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary-light transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Additional highlight section -->
-        <div class="mt-16 text-center fade-in-up" style="animation-delay: 0.8s;">
-          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 border border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 group">
-            <!-- Background decoration -->
-            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            <div class="relative p-12 max-w-4xl mx-auto">
-              <!-- Icon -->
-              <div class="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl">
-                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              
-              <!-- Title -->
-              <h3 class="text-3xl font-bold text-primary mb-6 group-hover:text-primary-light transition-colors duration-300">
-                Approche méthodologique
-              </h3>
-              
-              <!-- Description -->
-              <p class="text-xl text-foreground leading-relaxed max-w-3xl mx-auto">
-                Je privilégie une approche <strong class="text-primary">Test-Driven Development (TDD)</strong> avec des pratiques 
-                <strong class="text-primary">Clean Code</strong> pour garantir la maintenabilité. Mon expertise en 
-                <strong class="text-primary">Domain-Driven Design (DDD)</strong> me permet de créer des architectures 
-                évolutives et alignées sur les besoins métier, complétées par des pipelines 
-                <strong class="text-primary">CI/CD</strong> automatisés pour un déploiement fiable.
-              </p>
-              
-              <!-- Hover effect -->
-              <div class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-primary-light transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
             </div>
           </div>
         </div>

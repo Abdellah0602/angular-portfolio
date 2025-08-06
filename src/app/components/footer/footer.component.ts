@@ -18,11 +18,12 @@ import { CommonModule } from '@angular/common';
               <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
               </svg>
-              <span class="font-bold text-xl group-hover:tracking-wide transition-all duration-300">Abdellah</span>
+              <span class="font-bold text-xl group-hover:tracking-wide transition-all duration-300">Abdellah ABDEDOU</span>
             </div>
             <p class="text-primary-foreground/80 leading-relaxed">
-              Développeur Back-End spécialisé en Java Spring Boot et Nest.js. 
-              Expert en optimisation des performances et création d'API sécurisées.
+              Développeur Full Stack avec une expertise en Java 
+              Spring Boot et Nest.js. Solide expérience en conception d’API sécurisées, optimisation des performances et 
+              intégration front-end pour des applications web robustes et évolutives.
             </p>
           </div>
 
@@ -100,7 +101,7 @@ import { CommonModule } from '@angular/common';
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
-                <span>Paris 20</span>
+                <span>Ile-de-France</span>
               </div>
             </div>
           </div>
@@ -108,7 +109,7 @@ import { CommonModule } from '@angular/common';
 
         <div class="border-t border-primary-foreground/20 mt-8 pt-8 text-center fade-in-up" style="animation-delay: 0.6s;">
           <p class="text-primary-foreground/60">
-            © {{ currentYear }} Abdellah. Tous droits réservés.
+            © {{ currentYear }} Abdellah ABDEDOU. Tous droits réservés.
           </p>
         </div>
       </div>

@@ -1,4 +1,4 @@
-# Abdellah Portfolio - Angular Version
+# Abdellah ABDEDOU Portfolio - Angular Version
 
 Version Angular de mon portfolio de développeur back-end, créée avec Angular 17 et Tailwind CSS.
 

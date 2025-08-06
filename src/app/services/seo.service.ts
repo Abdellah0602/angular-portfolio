@@ -80,4 +80,17 @@ export class SeoService {
       this.document.head.appendChild(link);
     }
   }
+
+  addPreloadLinks(resources: Array<{href: string; as: string; type?: string}>) {
+    resources.forEach(resource => {
+      const link = this.document.createElement('link');
+      link.rel = 'preload';
+      link.href = resource.href;
+      link.as = resource.as;
+      if (resource.type) {
+        link.type = resource.type;
+      }
+      this.document.head.appendChild(link);
+    });
+  }
 }

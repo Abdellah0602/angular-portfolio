@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
         <div class="text-center mb-16 fade-in-up">
           <h2 class="text-4xl font-bold text-primary mb-4">À propos</h2>
           <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Développeur back-end passionné par l'architecture logicielle et les bonnes pratiques
+            Développeur Full Stack passionné par l’architecture logicielle, les bonnes pratiques de développement et la création d’applications performantes et maintenables.
           </p>
         </div>
 
@@ -46,7 +46,7 @@ import { CommonModule } from '@angular/common';
                   </div>
                   <div>
                     <h4 class="font-semibold text-primary">Expérience</h4>
-                    <p class="text-muted-foreground">2+ années en développement back-end</p>
+                    <p class="text-muted-foreground">2+ années en développement Full Stack</p>
                   </div>
                 </div>
               </div>
@@ -104,7 +104,7 @@ import { CommonModule } from '@angular/common';
                       <p class="text-sm text-muted-foreground">{{ experience.company }}</p>
                     </div>
                     <div class="text-right">
-                      <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
+                      <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full whitespace-nowrap">
                         {{ experience.duration }}
                       </span>
                     </div>

@@ -17,7 +17,7 @@ import { CommonModule } from '@angular/common';
             <svg class="w-8 h-8 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
             </svg>
-            <span class="font-bold text-xl group-hover:tracking-wide transition-all duration-300">Abdellah</span>
+            <span class="font-bold text-xl group-hover:tracking-wide transition-all duration-300">Abdellah ABDEDOU</span>
           </button>
 
           <!-- Desktop Navigation -->
@@ -102,7 +102,6 @@ export class NavigationComponent implements OnInit {
     { label: "À propos", action: () => this.scrollToSection('about') },
     { label: "Projets", action: () => this.scrollToSection('projects') },
     { label: "Compétences", action: () => this.scrollToSection('skills') },
-    { label: "Contact", action: () => this.scrollToSection('contact') },
   ];
 
   @HostListener('window:scroll', [])
@@ -117,12 +116,29 @@ export class NavigationComponent implements OnInit {
 
   scrollToSection(sectionId: string) {
     const element = document.getElementById(sectionId);
-    element?.scrollIntoView({ behavior: 'smooth' });
+    if (element) {
+      // Enhanced smooth scroll with better options
+      element.scrollIntoView({ 
+        behavior: 'smooth', 
+        block: 'start',
+        inline: 'nearest'
+      });
+      
+      // Add focus management for accessibility
+      element.setAttribute('tabindex', '-1');
+      element.focus({ preventScroll: true });
+      
+      // Remove tabindex after focus for better UX
+      setTimeout(() => element.removeAttribute('tabindex'), 1000);
+    }
     this.isOpen = false;
   }
 
   scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ 
+      top: 0, 
+      behavior: 'smooth' 
+    });
     this.isOpen = false;
   }
 
