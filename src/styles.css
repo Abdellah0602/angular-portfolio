@@ -48,6 +48,10 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-card: 0 4px 20px hsl(var(--primary) / 0.1);
     --shadow-button: 0 4px 12px hsl(var(--primary) / 0.2);
+    --shadow-hover: 0 8px 32px hsl(var(--primary) / 0.15);
+
+    /* Radius */
+    --radius: 0.5rem;
     --shadow-hover: 0 8px 30px hsl(var(--primary) / 0.15);
 
     --radius: 0.5rem;

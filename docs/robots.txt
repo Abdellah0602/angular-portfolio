@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://abdellah0602.github.io/angular-portfolio/sitemap.xml
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Allow search engines to access assets
+Allow: /assets/
+Allow: /*.css
+Allow: /*.js
