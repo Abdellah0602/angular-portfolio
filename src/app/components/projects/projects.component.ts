@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,9 +9,9 @@ import { CommonModule } from '@angular/common';
     <section id="projects" class="py-20 bg-background">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16 fade-in-up">
-          <h2 class="text-4xl font-bold text-primary mb-4">Projets & R├®alisations</h2>
+          <h2 class="text-4xl font-bold text-primary mb-4">Projets & Réalisations</h2>
           <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-            D├®couvrez mes r├®alisations techniques en d├®veloppement
+            Découvrez mes réalisations techniques en développement
           </p>
         </div>
         
@@ -22,32 +22,32 @@ import { CommonModule } from '@angular/common';
             [style.animation-delay]="(i * 0.1) + 's'"
           >
             <div class="card-header pb-4">
-              <div class="w-full h-48 bg-gray-light rounded-lg mb-4 overflow-hidden" role="img" [attr.aria-label]="'Capture d ├®cran du projet ' + project.title">
+              <div class="w-full h-48 bg-gray-light rounded-lg mb-4 overflow-hidden" role="img" [attr.aria-label]="'Capture d écran du projet ' + project.title">
                 <img 
                   [src]="'assets/' + project.image"
-                  [alt]="'Interface du projet ' + project.title + ' montrant les principales fonctionnalit├®s'"
+                  [alt]="'Interface du projet ' + project.title + ' montrant les principales fonctionnalités'"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   loading="lazy"
                 />
               </div>
               <h3 class="card-title text-xl text-primary group-hover:text-primary-light transition-colors duration-300">{{ project.title }}</h3>
               
-              <!-- M├®triques du projet -->
+              <!-- Métriques du projet -->
               <div class="flex flex-wrap gap-2 mt-3">
                 <span class="badge badge-secondary text-xs">
-                  ÔÜí {{ project.metrics.performance }}
+                  ⚡ {{ project.metrics.performance }}
                 </span>
                 <span class="badge badge-secondary text-xs">
-                  ­ƒÄ» {{ project.metrics.uptime }}
+                  🎯 {{ project.metrics.uptime }}
                 </span>
                 <span class="badge badge-secondary text-xs">
-                  ÔÜí {{ project.metrics.responseTime }}
+                  ⚡ {{ project.metrics.responseTime }}
                 </span>
               </div>
             </div>
             
             <div class="card-content space-y-4 flex-1 flex flex-col">
-              <!-- Description avec hauteur limit├®e -->
+              <!-- Description avec hauteur limitée -->
               <p class="text-muted-foreground leading-relaxed text-sm">
                 {{ project.description }}
               </p>
@@ -75,9 +75,9 @@ import { CommonModule } from '@angular/common';
                   </ul>
                 </div>
                 
-                <!-- D├®fis Techniques -->
+                <!-- Défis Techniques -->
                 <div class="bg-secondary/50 rounded-lg p-3">
-                  <h4 class="font-semibold text-primary text-xs mb-2">D├®fis Techniques</h4>
+                  <h4 class="font-semibold text-primary text-xs mb-2">Défis Techniques</h4>
                   <ul class="text-xs text-muted-foreground space-y-1">
                     <li *ngFor="let challenge of project.challenges.slice(0, 2)" class="flex items-center gap-2">
                       <span class="w-1 h-1 bg-primary rounded-full"></span>
@@ -107,7 +107,7 @@ import { CommonModule } from '@angular/common';
                   <svg class="w-4 h-4 group-hover/info:scale-110 group-hover/info:rotate-12 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
-                  <span class="group-hover/info:translate-x-1 transition-transform duration-300">D├®tails</span>
+                  <span class="group-hover/info:translate-x-1 transition-transform duration-300">Détails</span>
                 </button>
               </div>
             </div>
@@ -145,35 +145,35 @@ export class ProjectsComponent {
   projects = [
     {
       title: "MobiAid - Application iOS PMR",
-      description: "Application iOS d├®di├®e ├á aider les Personnes ├á Mobilit├® R├®duite (PMR) dans les transports. Utilise la g├®olocalisation via Swift, des API s├®curis├®es en Nest.js et MongoDB pour connecter instantan├®ment utilisateurs et volontaires.",
-      technologies: ["Swift", "Nest.js", "MongoDB", "iOS", "G├®olocalisation"],
+      description: "Application iOS dédiée à aider les Personnes à Mobilité Réduite (PMR) dans les transports. Utilise la géolocalisation via Swift, des API sécurisées en Nest.js et MongoDB pour connecter instantanément utilisateurs et volontaires.",
+      technologies: ["Swift", "Nest.js", "MongoDB", "iOS", "Géolocalisation"],
       github: "https://github.com/Abdellah0602/MobiAid/tree/main/nestjs-mongodb-crud",
       image: "logo_mobiaid.png",
       metrics: {
         performance: "Application Mobile",
         uptime: "100%",
-        responseTime: "Temps r├®el"
+        responseTime: "Temps réel"
       },
       impacts: [
         "Aide aux PMR dans les transports",
-        "Connexion instantan├®e utilisateurs-volontaires",
+        "Connexion instantanée utilisateurs-volontaires",
         "Favorise l'autonomie et l'inclusion"
       ],
       challenges: [
-        "D├®veloppement iOS avec Swift",
-        "API s├®curis├®es en Nest.js",
-        "Gestion de la g├®olocalisation temps r├®el"
+        "Développement iOS avec Swift",
+        "API sécurisées en Nest.js",
+        "Gestion de la géolocalisation temps réel"
       ]
     },
     {
       title: "Webnovel Scraper - Algorithme d'extraction de romans",
-      description: "Passionn├® de webnovels et lecteur sur Kindle, jÔÇÖai d├®velopp├® ce script Python pour extraire automatiquement les chapitres depuis plusieurs plateformes. Il utilise BeautifulSoup et requests pour g├®rer le scraping, les cookies, la pagination, et permet dÔÇÖ├®diter/exporter les contenus dans des formats lisibles sur liseuse.",
+      description: "Passionné de webnovels et lecteur sur Kindle, j’ai développé ce script Python pour extraire automatiquement les chapitres depuis plusieurs plateformes. Il utilise BeautifulSoup et requests pour gérer le scraping, les cookies, la pagination, et permet d’éditer/exporter les contenus dans des formats lisibles sur liseuse.",
       technologies: ["Python", "BeautifulSoup", "Requests", "Scraping", "Automatisation"],
       github: "https://github.com/Abdellah0602/webnovel_scraper",
       image: "logo_webnovel_scraper.png",
       metrics: {
         performance: "Extraction rapide",
-        uptime: "├Ç la demande",
+        uptime: "À la demande",
         responseTime: "Quelques secondes par chapitre"
       },
       impacts: [
@@ -184,7 +184,7 @@ export class ProjectsComponent {
       challenges: [
         "Gestion des protections anti-scraping",
         "Adaptation aux changements de structure des sites",
-        "Export propre et structur├® des donn├®es"
+        "Export propre et structuré des données"
       ]
     }
   ];

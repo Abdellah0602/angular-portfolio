@@ -1,4 +1,4 @@
-﻿import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -99,9 +99,9 @@ export class NavigationComponent implements OnInit {
 
   navItems = [
     { label: "Accueil", action: () => this.scrollToTop() },
-    { label: "├Ç propos", action: () => this.scrollToSection('about') },
+    { label: "À propos", action: () => this.scrollToSection('about') },
     { label: "Projets", action: () => this.scrollToSection('projects') },
-    { label: "Comp├®tences", action: () => this.scrollToSection('skills') },
+    { label: "Compétences", action: () => this.scrollToSection('skills') },
   ];
 
   @HostListener('window:scroll', [])

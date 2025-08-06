@@ -1,4 +1,4 @@
-﻿import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
       <div class="container mx-auto px-6 relative z-10">
         <div class="text-center text-white fade-in-up">
           <div class="mb-6">
-            <svg class="w-16 h-16 mx-auto mb-4 text-white/90 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true" role="img" aria-label="Ic├┤ne de d├®veloppement">
+            <svg class="w-16 h-16 mx-auto mb-4 text-white/90 icon-hover" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true" role="img" aria-label="Icône de développement">
               <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
             </svg>
           </div>
@@ -21,14 +21,14 @@ import { CommonModule } from '@angular/common';
           <h1 id="hero-title" class="text-5xl md:text-6xl font-bold mb-6 tracking-tight animate-fadeInUp">
             Abdellah ABDEDOU
             <span class="block text-3xl md:text-4xl font-normal text-white/90 mt-2 animate-fadeInUp" style="animation-delay: 0.2s;">
-              D├®veloppeur Full Stack
+              Développeur Full Stack
             </span>
           </h1>
           
           <p class="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed animate-fadeInUp" style="animation-delay: 0.4s;">
-            Sp├®cialis├® en <strong>Java Spring Boot</strong> et <strong>Node.js</strong>
+            Spécialisé en <strong>Java Spring Boot</strong> et <strong>Node.js</strong>
             <br />
-            Solide exp├®rience en conception dÔÇÖAPI s├®curis├®es, optimisation des performances et int├®gration front-end pour des applications web robustes et ├®volutives
+            Solide expérience en conception d’API sécurisées, optimisation des performances et intégration front-end pour des applications web robustes et évolutives
 
           </p>
           
@@ -60,7 +60,7 @@ import { CommonModule } from '@angular/common';
             <a
               href="tel:0665058560"
               class="text-white/70 hover:text-white transition-all duration-300 p-2 rounded-full hover:bg-white/10 icon-hover"
-              aria-label="T├®l├®phone"
+              aria-label="Téléphone"
             >
               <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
