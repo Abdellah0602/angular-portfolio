@@ -9,5 +9,6 @@ Crawl-delay: 1
 
 # Allow search engines to access assets
 Allow: /assets/
-Allow: /*.css
-Allow: /*.js
+
+# Block access to source maps in production
+Disallow: *.map$
