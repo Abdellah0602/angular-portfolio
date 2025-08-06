@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,9 +9,9 @@ import { CommonModule } from '@angular/common';
     <section id="skills" class="py-20 bg-section-gradient">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16 fade-in-up">
-          <h2 class="text-4xl font-bold text-primary mb-4">Compétences techniques</h2>
+          <h2 class="text-4xl font-bold text-primary mb-4">Comp├®tences techniques</h2>
           <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Technologies et méthodologies que je maîtrise pour créer des solutions robustes
+            Technologies et m├®thodologies que je ma├«trise pour cr├®er des solutions robustes
           </p>
         </div>
         
@@ -83,17 +83,17 @@ import { CommonModule } from '@angular/common';
           </div>
         </div>
         
-        <!-- Section Méthodologies -->
+        <!-- Section M├®thodologies -->
         <div class="mt-20 fade-in-up" style="animation-delay: 0.6s;">
           <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-primary mb-4">Méthodologies & Best Practices</h3>
-            <p class="text-lg text-muted-foreground">Approches que j'applique pour garantir la qualité</p>
+            <h3 class="text-3xl font-bold text-primary mb-4">M├®thodologies et Bonnes Pratiques</h3>
+            <p class="text-lg text-muted-foreground">Approches que j'applique pour garantir la qualit├®</p>
           </div>
           
           <div class="grid md:grid-cols-3 gap-8">
             <div 
               *ngFor="let method of methodologies; let i = index"
-              class="group relative overflow-hidden rounded-xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-xl hover:shadow-primary/20"
+              class="card card-hover group fade-in-up"
               [style.animation-delay]="(i * 0.1) + 's'"
             >
               <!-- Background decoration -->
@@ -117,7 +117,7 @@ import { CommonModule } from '@angular/common';
                 
                 <!-- Benefits -->
                 <div class="space-y-3">
-                  <h5 class="font-semibold text-primary text-sm uppercase tracking-wide">Bénéfices</h5>
+                  <h5 class="font-semibold text-primary text-sm uppercase tracking-wide">B├®n├®fices</h5>
                   <div class="flex flex-wrap gap-2">
                     <span 
                       *ngFor="let benefit of method.benefits" 
@@ -131,40 +131,6 @@ import { CommonModule } from '@angular/common';
                 <!-- Hover effect -->
                 <div class="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary to-primary-light transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
               </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Additional highlight section -->
-        <div class="mt-16 text-center fade-in-up" style="animation-delay: 0.8s;">
-          <div class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-primary/5 via-primary/10 to-primary/5 border border-primary/20 hover:border-primary/40 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/20 group">
-            <!-- Background decoration -->
-            <div class="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            
-            <div class="relative p-12 max-w-4xl mx-auto">
-              <!-- Icon -->
-              <div class="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-500 shadow-xl">
-                <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-              </div>
-              
-              <!-- Title -->
-              <h3 class="text-3xl font-bold text-primary mb-6 group-hover:text-primary-light transition-colors duration-300">
-                Approche méthodologique
-              </h3>
-              
-              <!-- Description -->
-              <p class="text-xl text-foreground leading-relaxed max-w-3xl mx-auto">
-                Je privilégie une approche <strong class="text-primary">Test-Driven Development (TDD)</strong> avec des pratiques 
-                <strong class="text-primary">Clean Code</strong> pour garantir la maintenabilité. Mon expertise en 
-                <strong class="text-primary">Domain-Driven Design (DDD)</strong> me permet de créer des architectures 
-                évolutives et alignées sur les besoins métier, complétées par des pipelines 
-                <strong class="text-primary">CI/CD</strong> automatisés pour un déploiement fiable.
-              </p>
-              
-              <!-- Hover effect -->
-              <div class="absolute bottom-0 left-0 right-0 h-2 bg-gradient-to-r from-primary to-primary-light transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
             </div>
           </div>
         </div>
@@ -195,21 +161,21 @@ export class SkillsComponent {
       title: "Back-End",
       iconType: "server",
       skills: [
-        { name: "Java (Spring Boot)", level: "Avancé", years: 2 },
-        { name: "Nest.js", level: "Avancé", years: 2 },
-        { name: "JavaScript", level: "Avancé", years: 5 },
-        { name: "Node.js", level: "Avancé", years: 4 },
+        { name: "Java (Spring Boot)", level: "Avanc├®", years: 2 },
+        { name: "Nest.js", level: "Avanc├®", years: 2 },
+        { name: "JavaScript", level: "Avanc├®", years: 5 },
+        { name: "Node.js", level: "Avanc├®", years: 4 },
         { name: "REST APIs", level: "Expert", years: 4 }
       ],
       color: "bg-blue-500"
     },
     {
-      title: "Bases de données",
+      title: "Bases de donn├®es",
       iconType: "database",
       skills: [
         { name: "SQL", level: "Expert", years: 5 },
-        { name: "MongoDB", level: "Avancé", years: 3 },
-        { name: "Bases de données relationnelles", level: "Expert", years: 5 }
+        { name: "MongoDB", level: "Avanc├®", years: 3 },
+        { name: "Bases de donn├®es relationnelles", level: "Expert", years: 5 }
       ],
       color: "bg-green-500"
     },
@@ -217,10 +183,10 @@ export class SkillsComponent {
       title: "DevOps & Outils",
       iconType: "wrench",
       skills: [
-        { name: "Docker", level: "Avancé", years: 4 },
-        { name: "Jenkins", level: "Avancé", years: 3 },
+        { name: "Docker", level: "Avanc├®", years: 4 },
+        { name: "Jenkins", level: "Avanc├®", years: 3 },
         { name: "Git", level: "Expert", years: 5 },
-        { name: "CI/CD", level: "Avancé", years: 3 }
+        { name: "CI/CD", level: "Avanc├®", years: 3 }
       ],
       color: "bg-red-500"
     },
@@ -228,9 +194,9 @@ export class SkillsComponent {
       title: "Front-End",
       iconType: "layers",
       skills: [
-        { name: "Angular", level: "Avancé", years: 3 },
+        { name: "Angular", level: "Avanc├®", years: 3 },
         { name: "HTML/CSS", level: "Expert", years: 5 },
-        { name: "TypeScript", level: "Avancé", years: 3 }
+        { name: "TypeScript", level: "Avanc├®", years: 3 }
       ],
       color: "bg-purple-500"
     },
@@ -238,20 +204,20 @@ export class SkillsComponent {
       title: "Mobile",
       iconType: "testtube",
       skills: [
-        { name: "Swift", level: "Intermédiaire", years: 1 },
-        { name: "iOS Development", level: "Intermédiaire", years: 1 },
-        { name: "Géolocalisation", level: "Intermédiaire", years: 1 }
+        { name: "Swift", level: "Interm├®diaire", years: 1 },
+        { name: "iOS Development", level: "Interm├®diaire", years: 1 },
+        { name: "G├®olocalisation", level: "Interm├®diaire", years: 1 }
       ],
       color: "bg-orange-500"
     },
     {
-      title: "Méthodologies",
+      title: "M├®thodologies",
       iconType: "gitbranch",
       skills: [
         { name: "TDD", level: "Expert", years: 2 },
         { name: "DDD", level: "Expert", years: 2 },
-        { name: "Clean Code", level: "Avancé", years: 2 },
-        { name: "Architecture logicielle", level: "Avancé", years: 2 }
+        { name: "Clean Code", level: "Avanc├®", years: 2 },
+        { name: "Architecture logicielle", level: "Avanc├®", years: 2 }
       ],
       color: "bg-indigo-500"
     }
@@ -260,26 +226,26 @@ export class SkillsComponent {
   methodologies = [
     {
       title: "Domain-Driven Design (DDD)",
-      description: "Conception d'architectures alignées sur le domaine métier",
-      benefits: ["Maintenabilité", "Évolutivité", "Qualité du code"]
+      description: "Conception d'architectures align├®es sur le domaine m├®tier",
+      benefits: ["Maintenabilit├®", "├ëvolutivit├®", "Qualit├® du code"]
     },
     {
       title: "Test-Driven Development (TDD)",
-      description: "Développement guidé par les tests pour garantir la qualité",
-      benefits: ["Qualité du code", "Documentation vivante", "Refactoring sécurisé"]
+      description: "D├®veloppement guid├® par les tests pour garantir la qualit├®",
+      benefits: ["Qualit├® du code", "Documentation vivante", "Refactoring s├®curis├®"]
     },
     {
       title: "Optimisation des performances",
-      description: "Création d'APIs sécurisées et performantes",
-      benefits: ["Performance", "Sécurité", "Maintenabilité"]
+      description: "Cr├®ation d'APIs s├®curis├®es et performantes",
+      benefits: ["Performance", "S├®curit├®", "Maintenabilit├®"]
     }
   ];
 
   getLevelClass(level: string): string {
     switch (level) {
       case 'Expert': return 'bg-green-100 text-green-800';
-      case 'Avancé': return 'bg-blue-100 text-blue-800';
-      case 'Intermédiaire': return 'bg-yellow-100 text-yellow-800';
+      case 'Avanc├®': return 'bg-blue-100 text-blue-800';
+      case 'Interm├®diaire': return 'bg-yellow-100 text-yellow-800';
       default: return 'bg-gray-100 text-gray-800';
     }
   }
@@ -287,8 +253,8 @@ export class SkillsComponent {
   getProgressClass(level: string): string {
     switch (level) {
       case 'Expert': return 'bg-green-500';
-      case 'Avancé': return 'bg-blue-500';
-      case 'Intermédiaire': return 'bg-yellow-500';
+      case 'Avanc├®': return 'bg-blue-500';
+      case 'Interm├®diaire': return 'bg-yellow-500';
       default: return 'bg-gray-500';
     }
   }

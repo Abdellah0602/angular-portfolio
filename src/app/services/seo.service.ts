@@ -1,4 +1,4 @@
-import { Injectable, Inject } from '@angular/core';
+﻿import { Injectable, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { Meta, Title } from '@angular/platform-browser';
 
@@ -22,7 +22,7 @@ export class SeoService {
   }) {
     // Update title
     if (data.title) {
-      this.title.setTitle(`${data.title} | Abdellah ABDEDOU - Développeur Full Stack`);
+      this.title.setTitle(`${data.title} | Abdellah ABDEDOU - D├®veloppeur Full Stack`);
     }
 
     // Update meta tags
@@ -79,5 +79,18 @@ export class SeoService {
       link.setAttribute('href', url);
       this.document.head.appendChild(link);
     }
+  }
+
+  addPreloadLinks(resources: Array<{href: string; as: string; type?: string}>) {
+    resources.forEach(resource => {
+      const link = this.document.createElement('link');
+      link.rel = 'preload';
+      link.href = resource.href;
+      link.as = resource.as;
+      if (resource.type) {
+        link.type = resource.type;
+      }
+      this.document.head.appendChild(link);
+    });
   }
 }

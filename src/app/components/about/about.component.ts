@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+﻿import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,9 +9,9 @@ import { CommonModule } from '@angular/common';
     <section id="about" class="py-20 bg-section-gradient">
       <div class="container mx-auto px-6">
         <div class="text-center mb-16 fade-in-up">
-          <h2 class="text-4xl font-bold text-primary mb-4">À propos</h2>
+          <h2 class="text-4xl font-bold text-primary mb-4">├Ç propos</h2>
           <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Développeur back-end passionné par l'architecture logicielle et les bonnes pratiques
+            D├®veloppeur Full Stack passionn├® par lÔÇÖarchitecture logicielle, les bonnes pratiques de d├®veloppement et la cr├®ation dÔÇÖapplications performantes et maintenables.
           </p>
         </div>
 
@@ -30,7 +30,7 @@ import { CommonModule } from '@angular/common';
                   </div>
                   <div>
                     <h4 class="font-semibold text-primary">Formation</h4>
-                    <p class="text-muted-foreground">Master Architecte de Systèmes d'information - ETNA</p>
+                    <p class="text-muted-foreground">Master Architecte de Syst├¿mes d'information - ETNA</p>
                   </div>
                 </div>
               </div>
@@ -45,8 +45,8 @@ import { CommonModule } from '@angular/common';
                     </svg>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-primary">Expérience</h4>
-                    <p class="text-muted-foreground">2+ années en développement back-end</p>
+                    <h4 class="font-semibold text-primary">Exp├®rience</h4>
+                    <p class="text-muted-foreground">2+ ann├®es en d├®veloppement Full Stack</p>
                   </div>
                 </div>
               </div>
@@ -61,8 +61,8 @@ import { CommonModule } from '@angular/common';
                     </svg>
                   </div>
                   <div>
-                    <h4 class="font-semibold text-primary">Disponibilité</h4>
-                    <p class="text-muted-foreground">Disponible pour de nouvelles opportunités</p>
+                    <h4 class="font-semibold text-primary">Disponibilit├®</h4>
+                    <p class="text-muted-foreground">Disponible pour de nouvelles opportunit├®s</p>
                   </div>
                 </div>
               </div>
@@ -78,16 +78,16 @@ import { CommonModule } from '@angular/common';
                   </div>
                   <div>
                     <h4 class="font-semibold text-primary">Objectif</h4>
-                    <p class="text-muted-foreground">Apporter une valeur ajoutée aux projets ambitieux et complexes</p>
+                    <p class="text-muted-foreground">Apporter une valeur ajout├®e aux projets ambitieux et complexes</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Expérience professionnelle -->
+          <!-- Exp├®rience professionnelle -->
           <div class="space-y-8 fade-in-up" style="animation-delay: 0.4s;">
-            <h3 class="text-2xl font-bold text-primary mb-6">Expérience Professionnelle</h3>
+            <h3 class="text-2xl font-bold text-primary mb-6">Exp├®rience Professionnelle</h3>
             
             <div class="space-y-6">
               <div 
@@ -104,7 +104,7 @@ import { CommonModule } from '@angular/common';
                       <p class="text-sm text-muted-foreground">{{ experience.company }}</p>
                     </div>
                     <div class="text-right">
-                      <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">
+                      <span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full whitespace-nowrap">
                         {{ experience.duration }}
                       </span>
                     </div>
@@ -112,9 +112,9 @@ import { CommonModule } from '@angular/common';
                   
                   <p class="text-muted-foreground text-sm mb-3">{{ experience.description }}</p>
                   
-                  <!-- Réalisations clés -->
+                  <!-- R├®alisations cl├®s -->
                   <div class="space-y-2">
-                    <h5 class="font-medium text-primary text-sm">Réalisations clés :</h5>
+                    <h5 class="font-medium text-primary text-sm">R├®alisations cl├®s :</h5>
                     <ul class="text-xs text-muted-foreground space-y-1">
                       <li *ngFor="let achievement of experience.achievements" class="flex items-center gap-2">
                         <span class="w-1 h-1 bg-primary rounded-full"></span>
@@ -123,7 +123,7 @@ import { CommonModule } from '@angular/common';
                     </ul>
                   </div>
                   
-                  <!-- Technologies utilisées -->
+                  <!-- Technologies utilis├®es -->
                   <div class="mt-3">
                     <div class="flex flex-wrap gap-1">
                       <span *ngFor="let tech of experience.technologies" class="badge badge-secondary text-xs">
@@ -136,11 +136,11 @@ import { CommonModule } from '@angular/common';
             </div>
           </div>
         </div>
-        <!-- Section Centres d'Intérêt -->
+        <!-- Section Centres d'Int├®r├¬t -->
         <div class="mt-20 fade-in-up" style="animation-delay: 0.8s;">
           <div class="text-center mb-12">
-            <h3 class="text-3xl font-bold text-primary mb-4">Centres d'Intérêt</h3>
-            <p class="text-lg text-muted-foreground">Passions et activités en dehors du développement</p>
+            <h3 class="text-3xl font-bold text-primary mb-4">Centres d'Int├®r├¬t</h3>
+            <p class="text-lg text-muted-foreground">Passions et activit├®s en dehors du d├®veloppement</p>
           </div>
           
           <div class="grid md:grid-cols-4 gap-6">
@@ -186,27 +186,27 @@ import { CommonModule } from '@angular/common';
 export class AboutComponent {
   experiences = [
     {
-      title: "Ingénieur études et développement",
+      title: "Ing├®nieur ├®tudes et d├®veloppement",
       company: "INFOTEL",
-      duration: "Avril 2024 - Décembre 2024",
-      description: "Conception et optimisation de projets pour grands comptes, utilisant Spring Boot pour développer des solutions robustes.",
+      duration: "Avril 2024 - D├®cembre 2024",
+      description: "Conception et optimisation de projets pour grands comptes, utilisant Spring Boot pour d├®velopper des solutions robustes.",
       achievements: [
-        "Spécialisé dans le TDD et le DDD pour garantir la qualité du code",
+        "Sp├®cialis├® dans le TDD et le DDD pour garantir la qualit├® du code",
         "Architecture adaptable et maintenable",
-        "Amélioration de l'efficacité des processus de développement",
-        "Livraison de solutions adaptées aux besoins des clients"
+        "Am├®lioration de l'efficacit├® des processus de d├®veloppement",
+        "Livraison de solutions adapt├®es aux besoins des clients"
       ],
       technologies: ["Spring Boot", "TDD", "DDD", "Java", "Architecture"]
     },
     {
-      title: "Ingénieur études et développement",
+      title: "Ing├®nieur ├®tudes et d├®veloppement",
       company: "INFOTEL - Projet TRUST",
-      duration: "Août 2023 - Avril 2024",
-      description: "Développement d'un outil CRM interne avec développement back-end et front-end complet.",
+      duration: "Ao├╗t 2023 - Avril 2024",
+      description: "D├®veloppement d'un outil CRM interne avec d├®veloppement back-end et front-end complet.",
       achievements: [
-        "Développement back-end avec Java",
+        "D├®veloppement back-end avec Java",
         "Processus CI/CD avec Jenkins",
-        "Développement front-end avec Angular",
+        "D├®veloppement front-end avec Angular",
         "Gestion des conteneurs avec Docker"
       ],
       technologies: ["Java", "Jenkins", "Angular", "Docker", "CRM"]
@@ -216,19 +216,19 @@ export class AboutComponent {
   interests = [
     {
       name: "Badminton",
-      description: "Pratique régulière de ce sport dynamique"
+      description: "Pratique r├®guli├¿re de ce sport dynamique"
     },
     {
-      name: "Cinéma",
-      description: "Passion pour le 7ème art"
+      name: "Cin├®ma",
+      description: "Passion pour le 7├¿me art"
     },
     {
       name: "Lecture",
-      description: "Découverte de nouveaux univers fantastiques"
+      description: "D├®couverte de nouveaux univers fantastiques"
     },
     {
       name: "Escape Game",
-      description: "Résolution d'énigmes et jeux d'évasion"
+      description: "R├®solution d'├®nigmes et jeux d'├®vasion"
     }
   ];
 } 
