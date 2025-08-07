@@ -20,7 +20,17 @@ if ($LASTEXITCODE -eq 0) {
     Write-Host "📁 Copie vers le dossier docs..." -ForegroundColor Yellow
     Copy-Item -Recurse "dist\abdellah-portfolio\*" "docs\"
     
-    Write-Host "✅ Copie terminée!" -ForegroundColor Green
+    # Vérifier et créer le dossier assets si nécessaire
+    if (-not (Test-Path "docs\assets")) {
+        Write-Host "📁 Création du dossier assets..." -ForegroundColor Yellow
+        New-Item -ItemType Directory -Path "docs\assets" -Force
+    }
+    
+    # Déplacer les assets vers le bon dossier s'ils sont à la racine
+    if (Test-Path "docs\favicon.jpg") { Move-Item "docs\favicon.jpg" "docs\assets\favicon.jpg" -Force }
+    if (Test-Path "docs\*.png") { Move-Item "docs\*.png" "docs\assets\" -Force }
+    
+    Write-Host "✅ Copie et organisation terminées!" -ForegroundColor Green
     
     # Git add et commit
     Write-Host "📤 Préparation pour Git..." -ForegroundColor Yellow
