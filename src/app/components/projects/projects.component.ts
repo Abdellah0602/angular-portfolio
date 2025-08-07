@@ -87,20 +87,11 @@ import { CommonModule } from '@angular/common';
                 </div>
               </div>
               
-              <div class="flex gap-3 pt-4 mt-auto">
+              <div class="flex justify-center pt-4 mt-auto">
                 <a 
                   [href]="project.github" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  class="btn btn-outline btn-sm flex items-center gap-2 group/link hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-300"
-                  [attr.aria-label]="'Voir le code source de ' + project.title + ' sur GitHub'"
-                >
-                  <svg class="w-4 h-4 group-hover/link:scale-110 group-hover/link:rotate-12 transition-all duration-300" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                  </svg>
-                  <span class="group-hover/link:translate-x-1 transition-transform duration-300">Code</span>
-                </a>
-                <button 
                   class="btn btn-outline btn-sm flex items-center gap-2 group/info hover:shadow-md transform hover:-translate-y-0.5 transition-all duration-300"
                   [attr.aria-label]="'Plus d informations sur ' + project.title"
                 >
@@ -108,7 +99,7 @@ import { CommonModule } from '@angular/common';
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                   </svg>
                   <span class="group-hover/info:translate-x-1 transition-transform duration-300">Détails</span>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -186,6 +177,28 @@ export class ProjectsComponent {
         "Adaptation aux changements de structure des sites",
         "Export propre et structuré des données"
       ]
-    }
+    },
+    {
+      title: "Eisserah – Boutique Shopify de mode modeste",
+      description: "J’ai développé un projet sur Shopify pour une marque de ‘modest fashion’ que j’ai réalisé et mis en ligne moi‑même. Le site propose des collections de vêtements discrets et élégants, optimisé pour une expérience fluide et sécurisée.",
+      technologies: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript", "Responsive Design"],
+      github: "https://eisserah.com",
+      image: "logo_mobiaid.png", // Temporaire en attendant l'image Eisserah
+      metrics: {
+        performance: "Chargement rapide des collections",
+        uptime: "24/7 (hébergé sur Shopify)",
+        responseTime: "Navigations fluides entre les pages produits"
+      },
+      impacts: [
+        "Mise en ligne d’une boutique complète sur Shopify",
+        "Offre de vêtements adaptés à une clientèle ciblée (modest fashion)",
+        "Amélioration de l’expérience utilisateur (filtres, responsive, paiement sécurisé)"
+      ],
+      challenges: [
+        "Adaptation du thème Shopify aux besoins de la marque",
+        "Gestion des collections, filtres produits et responsive design",
+        "Mise en place de l’UX client (navigation, panier, expédition, checkout)"
+      ]
+  }
   ];
 }
