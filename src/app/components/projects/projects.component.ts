@@ -183,7 +183,7 @@ export class ProjectsComponent {
       description: "J’ai développé un projet sur Shopify pour une marque de ‘modest fashion’ que j’ai réalisé et mis en ligne moi‑même. Le site propose des collections de vêtements discrets et élégants, optimisé pour une expérience fluide et sécurisée.",
       technologies: ["Shopify", "Liquid", "HTML", "CSS", "JavaScript", "Responsive Design"],
       github: "https://eisserah.com",
-      image: "logo_mobiaid.png", // Temporaire en attendant l'image Eisserah
+      image: "logo_eisserah.png",
       metrics: {
         performance: "Chargement rapide des collections",
         uptime: "24/7 (hébergé sur Shopify)",
