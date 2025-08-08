@@ -31,7 +31,7 @@ import { FormsModule } from '@angular/forms';
                       <div class="flex-1">
                         <h4 class="font-semibold text-primary">Email</h4>
                         <a 
-                          href="mailto:abdedo_a@etna-alternance.net" 
+                          href="mailto:abdellah.abdedo@gmail.com" 
                           class="text-muted-foreground hover:text-primary transition-all duration-300 group-hover:translate-x-1 inline-block"
                         >
                           abdedo_a&#64;etna-alternance.net

@@ -79,7 +79,7 @@ import { CommonModule } from '@angular/common';
             <h3 class="font-semibold text-lg mb-4">Contact</h3>
             <div class="space-y-4">
               <a
-                href="mailto:abdedo_a@etna-alternance.net"
+                href="mailto:abdellah.abdedo@gmail.com"
                 class="flex items-center gap-3 text-primary-foreground/80 hover:text-primary-foreground transition-all duration-300 group"
               >
                 <svg class="w-5 h-5 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -49,7 +49,7 @@ import { CommonModule } from '@angular/common';
           
           <div class="flex justify-center gap-6 animate-fadeInUp" style="animation-delay: 0.8s;">
             <a
-              href="mailto:abdedo_a@etna-alternance.net"
+              href="mailto:abdellah.abdedo@gmail.com"
               class="text-white/70 hover:text-white transition-all duration-300 p-2 rounded-full hover:bg-white/10 icon-hover"
               aria-label="Email"
             >
